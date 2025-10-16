@@ -1,1 +1,8 @@
+# dependencies
+node_modules
+
+# secrets
 .env
+
+# mac Finder junk (optional but nice)
+.DS_Store

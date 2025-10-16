@@ -1,8 +1,12 @@
 // index.js
 const express = require('express');
+const { PORT, OPENAI_API_KEY } = require('./config');
 
 const app = express();
-const PORT = 3000;
+
+// use the one from config.js
+// (no need to redeclare PORT here — you already imported it)
+
 
 // already have:
 /*
