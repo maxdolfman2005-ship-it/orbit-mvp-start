@@ -1,14 +1,9 @@
 // index.js
 const express = require('express');
-const { PORT, OPENAI_API_KEY } = require('./config');   // reads .env
-const OpenAI = require('openai');
-const client = new OpenAI({ apiKey: OPENAI_API_KEY });
+const { PORT } = require('./config'); // reads .env
+const client = require('./openaiClient'); // ✅ import the OpenAI client from new file
 
 const app = express();
-
-// use the one from config.js
-// (no need to redeclare PORT here — you already imported it)
-
 
 // already have:
 /*
